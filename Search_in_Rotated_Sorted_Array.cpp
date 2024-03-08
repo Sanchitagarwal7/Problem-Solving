@@ -13,7 +13,7 @@ int main(){
 
     while(low<=high){
         int mid = low+(high-low)/2;
-        
+
         if(nums[mid]==target){
             res = mid;
             break;

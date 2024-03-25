@@ -2,6 +2,10 @@
     "files.associations": {
         "*.ejs": "html",
         "vector": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "iostream": "cpp",
+        "limits": "cpp",
+        "valarray": "cpp",
+        "algorithm": "cpp"
     }
 }

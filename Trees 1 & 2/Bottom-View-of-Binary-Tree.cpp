@@ -32,7 +32,6 @@ vector <int> bottomView(Node *root) {
     }
     
     return res;
-    
 }
 
 int main(){

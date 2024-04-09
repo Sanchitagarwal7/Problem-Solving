@@ -3,7 +3,7 @@ using namespace std;
 
 class TrieNode{
     public:
-        unordered_map<char, TrieNode*> children;
+        unordered_map<char, TrieNode*> children; //TrieNode* children[26];
         bool isEnd;
         int prefixCount;
 

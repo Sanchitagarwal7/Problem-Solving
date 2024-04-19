@@ -54,11 +54,12 @@ TrieNode* root;
     }
     
     void dfs(TrieNode* node, string pref, vector<string>& sugg) {
-        if(node == NULL) return;
         if(node->getEnd()) sugg.push_back(pref);
 
         for(int i = 0; i < 26; i++) {
-            if(node->children[i] != NULL) {
+            if(node->children[i] == NULL){
+                return ;
+            }else{
                 char ch = 'a' + i;
                 dfs(node->children[i], pref + ch, sugg);
             }

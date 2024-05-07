@@ -38,7 +38,6 @@ int change(int amount, vector<int>& coins) {
     return findWays(amount, coins, index, dp);
 }
 
-
 /*Tabulation*/
 int change(int amount, vector<int>& coins) {
     int n = coins.size();
@@ -77,7 +76,6 @@ int change(int amount, vector<int>& coins) {
 
     return dp[n-1][amount];
 }
-
 
 /*Space Optimisation*/
 int change(int amount, vector<int>& coins) {
@@ -119,6 +117,8 @@ int change(int amount, vector<int>& coins) {
 
     return prev[amount];
 }
+
+
 int main(){
     return 0;
 }

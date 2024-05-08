@@ -47,7 +47,6 @@ public:
         return prev[n-1];
     }
 };
-
 /*Tabulation*/
 class Solution {
 public:

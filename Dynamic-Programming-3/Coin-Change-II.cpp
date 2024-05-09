@@ -114,7 +114,6 @@ int change(int amount, vector<int>& coins) {
         }
         prev = curr;
     }
-
     return prev[amount];
 }
 

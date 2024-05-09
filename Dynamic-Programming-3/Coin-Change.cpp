@@ -74,7 +74,6 @@ int coinChange(vector<int>& coins, int amount) {
             dp[0][i] = 1e8;
         }
     }
-
     for(int ind = 1; ind<n; ind++)
     {
         for(int target = 1; target<=amount; target++)

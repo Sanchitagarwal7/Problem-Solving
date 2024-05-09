@@ -23,6 +23,13 @@ int solve(vector<int>&nums, int index, vector<int>&dp)
     return dp[index] = max(pick, not_pick);
 }
 
+int rob(vector<int>& nums) {
+    int index = nums.size()-1;
+    vector<int> dp(nums.size(), -1);
+
+    return solve(nums, index, dp);
+}
+
 //TABULATION
 int rob(vector<int>& nums) {
     int n = nums.size();
@@ -70,13 +77,6 @@ int rob(vector<int>& nums) {
     }
 
     return prev1;
-}
-
-int rob(vector<int>& nums) {
-    int index = nums.size()-1;
-    vector<int> dp(nums.size(), -1);
-
-    return solve(nums, index, dp);
 }
 
 int main(){

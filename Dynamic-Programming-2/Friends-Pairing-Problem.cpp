@@ -32,9 +32,7 @@ int countFriendsPairings(int n)
 {
     if(n==1) return 1;
     if(n==2) return 2;
-    
     int MOD = 1e9+7;
-
     long long p1 = 1;
     long long p2 = 2;
     
